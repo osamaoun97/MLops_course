@@ -5,4 +5,7 @@ lint:
 	pylint multiply.py
 
 test:
-	python -m pytest -vv test_multiply.py
+	python -m pytest -vv
+
+deploy:
+	uvicorn app:app --reload
